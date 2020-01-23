@@ -33,12 +33,12 @@ syn region  bladeComment    matchgroup=bladeDelimiter start="{{--" end="--}}"  c
 syn keyword bladeKeyword @if @elseif @foreach @forelse @for @while @can @cannot @elsecan @elsecannot @include
     \ @includeIf @each @inject @extends @section @stack @push @unless @yield @parent @hasSection @break @continue
     \ @unset @lang @choice @component @slot @prepend @json @isset @auth @guest @switch @case @includeFirst @empty
-    \ @includeWhen @csrf @method @error
+    \ @includeWhen @csrf @method @error @cache @default
     \ nextgroup=bladePhpParenBlock skipwhite containedin=ALLBUT,@bladeExempt
 
 syn keyword bladeKeyword @else @endif @endunless @endfor @endforeach @endforelse @endwhile @endcan
     \ @endcannot @stop @append @endsection @endpush @show @overwrite @verbatim @endverbatim @endcomponent
-    \ @endslot @endprepend @endisset @endempty @endauth @endguest @endswitch @enderror
+    \ @endslot @endprepend @endisset @endempty @endauth @endguest @endswitch @enderror @endcache
     \ containedin=ALLBUT,@bladeExempt
 
 if exists('g:blade_custom_directives')

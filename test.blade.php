@@ -192,6 +192,13 @@ do_not_highlight@php.net
     @case(1)
         case code
         @break
+    @default
 @endswitch
 
 @includeFirst
+
+@csrf
+
+@method('POST')
+
+<div @if($var) class="active" @endif>Words</div>
